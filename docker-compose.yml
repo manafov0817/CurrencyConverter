@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: currencyconverter-api
+    ports:
+      - "8080:80" 
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - Jwt__Key=${JWT_KEY}
+      - Jwt__Issuer=${JWT_ISSUER}
+      - Jwt__Audience=${JWT_AUDIENCE}
+      - Auth__AdminUser__Email=${ADMIN_EMAIL}
+      - Auth__AdminUser__Password=${ADMIN_PASSWORD}
+      - Auth__AdminUser__Role=${ADMIN_ROLE}
+      - Auth__DemoUser__Email=${USER_EMAIL}
+      - Auth__DemoUser__Password=${USER_PASSWORD}
+      - Auth__DemoUser__Role=${USER_ROLE}
+      - ASPNETCORE_URLS=http://+:80
+    networks:
+      - currencyconverter-network
+    restart: unless-stopped
+
+networks:
+  currencyconverter-network:
+    driver: bridge

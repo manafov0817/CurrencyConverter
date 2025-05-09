@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="ExchangeRates\Entities\" />
+    <Folder Include="ExchangeRates\ValueObjects\" />
+    <Folder Include="Users\Entities\" />
+    <Folder Include="Users\ValueObjects\" />
+  </ItemGroup>
+
+</Project>

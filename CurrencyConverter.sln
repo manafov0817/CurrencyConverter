@@ -1,0 +1,111 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D7034F39-4A00-46BA-82A7-FDCC5CAAADC7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{2916737E-1A5A-4DE4-A0DC-3689DD7A54DF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{A61A6CD8-960D-49A4-9530-742A40B5B30A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyConverter.Application", "src\Core\CurrencyConverter.Application\CurrencyConverter.Application.csproj", "{43C542BB-600E-4363-9A61-7393CDAF7899}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyConverter.Domain", "src\Core\CurrencyConverter.Domain\CurrencyConverter.Domain.csproj", "{DED41B11-C3BD-4270-9761-0501A97F26F8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{6D8CA075-BEB6-4DC7-AA84-3321E664BD89}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyConverter.Auth", "src\Infrastructure\CurrencyConverter.Auth\CurrencyConverter.Auth.csproj", "{B366B0BE-0BFE-4E37-9ADB-114E7576835F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyConverter.Persistence", "src\Infrastructure\CurrencyConverter.Persistence\CurrencyConverter.Persistence.csproj", "{E7EEB208-1A54-4F46-A2DC-1B0DED67EC0F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyConverter.Api", "src\API\CurrencyConverter.Api\CurrencyConverter.Api.csproj", "{4D3993DC-7ECF-4ADE-A9C2-EF392148D221}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyConverter.Dtos", "src\Core\CurrencyConverter.Dtos\CurrencyConverter.Dtos.csproj", "{2FB461EE-F7F4-4F28-BC37-94C999D02ED1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{9E77E90C-5563-415C-B8F9-AF33B0C6D0A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyConverter.Application.Tests", "tests\CurrencyConverter.Application.Tests\CurrencyConverter.Application.Tests.csproj", "{58DC6D6B-3E2B-4172-A6E9-385AC082AE4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyConverter.Infrastructure.Tests", "tests\CurrencyConverter.Infrastructure.Tests\CurrencyConverter.Infrastructure.Tests.csproj", "{1FB3B8FA-517F-43A9-9D9D-C67518C89FE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyConverter.Api.Tests", "tests\CurrencyConverter.Api.Tests\CurrencyConverter.Api.Tests.csproj", "{EF66592E-8C71-4A99-BEB7-FA42124E79F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyConverter.Providers", "src\Infrastructure\CurrencyConverter.Providers\CurrencyConverter.Providers.csproj", "{0911B6BD-161E-4C38-A795-F32D9E867DBE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{460785BA-5D37-4A50-9145-E89DE0B5CD7B}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+		Dockerfile = Dockerfile
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43C542BB-600E-4363-9A61-7393CDAF7899}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43C542BB-600E-4363-9A61-7393CDAF7899}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43C542BB-600E-4363-9A61-7393CDAF7899}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43C542BB-600E-4363-9A61-7393CDAF7899}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DED41B11-C3BD-4270-9761-0501A97F26F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DED41B11-C3BD-4270-9761-0501A97F26F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DED41B11-C3BD-4270-9761-0501A97F26F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DED41B11-C3BD-4270-9761-0501A97F26F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B366B0BE-0BFE-4E37-9ADB-114E7576835F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B366B0BE-0BFE-4E37-9ADB-114E7576835F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B366B0BE-0BFE-4E37-9ADB-114E7576835F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B366B0BE-0BFE-4E37-9ADB-114E7576835F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7EEB208-1A54-4F46-A2DC-1B0DED67EC0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7EEB208-1A54-4F46-A2DC-1B0DED67EC0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7EEB208-1A54-4F46-A2DC-1B0DED67EC0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7EEB208-1A54-4F46-A2DC-1B0DED67EC0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D3993DC-7ECF-4ADE-A9C2-EF392148D221}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D3993DC-7ECF-4ADE-A9C2-EF392148D221}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D3993DC-7ECF-4ADE-A9C2-EF392148D221}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D3993DC-7ECF-4ADE-A9C2-EF392148D221}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FB461EE-F7F4-4F28-BC37-94C999D02ED1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FB461EE-F7F4-4F28-BC37-94C999D02ED1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FB461EE-F7F4-4F28-BC37-94C999D02ED1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FB461EE-F7F4-4F28-BC37-94C999D02ED1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58DC6D6B-3E2B-4172-A6E9-385AC082AE4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58DC6D6B-3E2B-4172-A6E9-385AC082AE4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58DC6D6B-3E2B-4172-A6E9-385AC082AE4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58DC6D6B-3E2B-4172-A6E9-385AC082AE4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FB3B8FA-517F-43A9-9D9D-C67518C89FE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FB3B8FA-517F-43A9-9D9D-C67518C89FE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FB3B8FA-517F-43A9-9D9D-C67518C89FE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FB3B8FA-517F-43A9-9D9D-C67518C89FE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF66592E-8C71-4A99-BEB7-FA42124E79F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF66592E-8C71-4A99-BEB7-FA42124E79F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF66592E-8C71-4A99-BEB7-FA42124E79F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF66592E-8C71-4A99-BEB7-FA42124E79F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0911B6BD-161E-4C38-A795-F32D9E867DBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0911B6BD-161E-4C38-A795-F32D9E867DBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0911B6BD-161E-4C38-A795-F32D9E867DBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0911B6BD-161E-4C38-A795-F32D9E867DBE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2916737E-1A5A-4DE4-A0DC-3689DD7A54DF} = {D7034F39-4A00-46BA-82A7-FDCC5CAAADC7}
+		{A61A6CD8-960D-49A4-9530-742A40B5B30A} = {D7034F39-4A00-46BA-82A7-FDCC5CAAADC7}
+		{43C542BB-600E-4363-9A61-7393CDAF7899} = {A61A6CD8-960D-49A4-9530-742A40B5B30A}
+		{DED41B11-C3BD-4270-9761-0501A97F26F8} = {A61A6CD8-960D-49A4-9530-742A40B5B30A}
+		{6D8CA075-BEB6-4DC7-AA84-3321E664BD89} = {D7034F39-4A00-46BA-82A7-FDCC5CAAADC7}
+		{B366B0BE-0BFE-4E37-9ADB-114E7576835F} = {6D8CA075-BEB6-4DC7-AA84-3321E664BD89}
+		{E7EEB208-1A54-4F46-A2DC-1B0DED67EC0F} = {6D8CA075-BEB6-4DC7-AA84-3321E664BD89}
+		{4D3993DC-7ECF-4ADE-A9C2-EF392148D221} = {2916737E-1A5A-4DE4-A0DC-3689DD7A54DF}
+		{2FB461EE-F7F4-4F28-BC37-94C999D02ED1} = {A61A6CD8-960D-49A4-9530-742A40B5B30A}
+		{58DC6D6B-3E2B-4172-A6E9-385AC082AE4E} = {9E77E90C-5563-415C-B8F9-AF33B0C6D0A2}
+		{1FB3B8FA-517F-43A9-9D9D-C67518C89FE8} = {9E77E90C-5563-415C-B8F9-AF33B0C6D0A2}
+		{EF66592E-8C71-4A99-BEB7-FA42124E79F0} = {9E77E90C-5563-415C-B8F9-AF33B0C6D0A2}
+		{0911B6BD-161E-4C38-A795-F32D9E867DBE} = {6D8CA075-BEB6-4DC7-AA84-3321E664BD89}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {289DC7FA-31A3-42BC-AA32-4FDF78F35CF4}
+	EndGlobalSection
+EndGlobal
